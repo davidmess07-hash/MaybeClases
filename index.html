@@ -11,18 +11,20 @@
 <link rel="stylesheet" href="./styles.css">  
 </head>
 <body>
-<nav class="site"> 
-  <div class="wrap inner" style="display: flex; align-items: center; justify-content: space-between;"> 
+<nav class="site" style="padding: 1.5rem 0;"> 
+  <div class="wrap inner" style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0 20px;"> 
+    <!-- Logo más grande -->
     <a href="#top" class="logo" style="display: flex; align-items: center;">
-      <img src="./imagen-logo.png" alt="Maybe" style="height: 45px; display: block;">
+      <img src="./imagen-logo.png" alt="Maybe" style="height: 60px; width: auto; display: block;">
     </a>
-    <div class="enlaces" style="display: flex; align-items: center; gap: 20px;">     
-      <a href="#niveles" class="menu">Levels</a>        
-      <a href="#testimonios" class="menu">Testimonials</a>        
-      <a href="#contacto" class="menu">Contact</a>
-      <span style="font-size: 0.9rem;">☏ 699 33 11 96</span>
-      <a href="#contacto" class="cta">Get your free spot</a>        
-      <button class="menu-btn" id="openMenu" aria-label="Open menu">☰</button>         
+
+    <!-- Menú con mayor espacio y tipografía -->
+    <div class="enlaces" style="display: flex; align-items: center; gap: 30px; font-size: 1.1rem;">     
+      <a href="#niveles" class="menu" style="text-decoration: none; color: #333;">Levels</a>        
+      <a href="#testimonios" class="menu" style="text-decoration: none; color: #333;">Testimonials</a>        
+      <a href="#contacto" class="menu" style="text-decoration: none; color: #333;">Contact</a>
+      <span style="display: flex; align-items: center; gap: 5px; font-size: 1rem; color: #333;">☏ 699 33 11 96</span>
+      <a href="#contacto" class="cta" style="background: #0056b3; color: white; padding: 12px 24px; border-radius: 50px; text-decoration: none; font-weight: bold;">Get your free spot</a>        
     </div>    
   </div>  
 </nav>
@@ -41,7 +43,9 @@
     <div class="wrap grid"> 
       <div>
         <div class="badge"> 
-          <span class="estrellas">★★★★★</span> 
+ <span class="estrellas" style="display: inline-flex; gap: 4px; align-items: center; color: #0056b3; font-size: 1.2rem;">
+  ★ ★ ★ ★ ★
+</span>
           <span>4.9/5 on Google · Ronda</span>          
         </div>        
         <h1>Your child can do it all <em>with the right support</em></h1>        
