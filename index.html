@@ -1,204 +1,315 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+<!doctype html>
+<html lang="es">
 <head>
-<meta charset="utf-8" />  
-<meta name="viewport" content="width=device-width, initial-scale=1" />   
-<title>Maybe · Educational Support Center in Ronda</title>
-<meta name="description" content="Personalized learning for a bright future. Tutoring in Ronda for Primary, Secondary, High School, Entrance Exams, and University." />   
-<link rel="preconnect" href="https://fonts.googleapis.com">  
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  
-<link rel="stylesheet" href="./styles.css">  
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Maybe · Centro de Apoyo Educativo en Ronda</title>
+<meta name="description" content="Aprendizaje personalizado para un futuro brillante. Clases de apoyo en Ronda para Primaria, ESO, Bachillerato, Pruebas de Acceso y Universidad." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maybe · Centro de Apoyo Educativo en Ronda</title>
+  <meta name="description" content="Aprendizaje personalizado para un futuro brillante. Clases de apoyo en Ronda para Primaria, ESO, Bachillerato, Pruebas de Acceso y Universidad." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-<nav class="site" style="padding: 1.5rem 0;"> 
-  <div class="wrap inner" style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0 20px;"> 
-    <!-- Logo más grande -->
-    <a href="#top" class="logo" style="display: flex; align-items: center;">
-      <img src="./imagen-logo.png" alt="Maybe" style="height: 60px; width: auto; display: block;">
-    </a>
-
-    <!-- Menú con mayor espacio y tipografía -->
-    <div class="enlaces" style="display: flex; align-items: center; gap: 30px; font-size: 1.1rem;">     
-      <a href="#niveles" class="menu" style="text-decoration: none; color: #333;">Levels</a>        
-      <a href="#testimonios" class="menu" style="text-decoration: none; color: #333;">Testimonials</a>        
-      <a href="#contacto" class="menu" style="text-decoration: none; color: #333;">Contact</a>
-      <span style="display: flex; align-items: center; gap: 5px; font-size: 1rem; color: #333;">☏ 699 33 11 96</span>
-      <a href="#contacto" class="cta" style="background: #0056b3; color: white; padding: 12px 24px; border-radius: 50px; text-decoration: none; font-weight: bold;">Get your free spot</a>        
-    </div>    
-  </div>  
+<nav class="site">
+  <div class="wrap inner">
+    <a href="#top" class="logo">Maybe</a>
+    <div class="links">
+      <a href="#como" class="menu">Cómo empezamos</a>
+      <a href="#niveles" class="menu">Niveles</a>
+      <a href="#testimonios" class="menu">Testimonios</a>
+      <a href="#contacto" class="menu">Contacto</a>
+      <a href="#contacto" class="cta">Pide tu plaza gratis</a>
+      <button class="menu-btn" id="openMenu" aria-label="Abrir menú">☰</button>
+<!-- Site navigation -->
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="#top" class="brand">Maybe</a>
+    <div class="nav-links">
+      <a href="#how-we-start" class="nav-link">Cómo empezamos</a>
+      <a href="#levels" class="nav-link">Niveles</a>
+      <a href="#testimonials" class="nav-link">Testimonios</a>
+      <a href="#contact" class="nav-link">Contacto</a>
+      <a href="#contact" class="nav-cta">Pide tu plaza gratis</a>
+      <button class="menu-toggle" id="menu-open" aria-label="Abrir menú">☰</button>
+    </div>
+  </div>
 </nav>
-<div class="drawer" id="drawer">  
-  <div class="panel"> 
-    <button class="close" id="closeMenu" aria-label="Close">×</button>   
-    <a href="#como" data-close>How we start</a>      
-    <a href="#niveles" data-close>Levels</a>      
-    <a href="#testimonios" data-close>Testimonials</a>      
-    <a href="#contacto" data-close>Contact</a>      
-    <a href="#contacto" class="cta" data-close style="background:var(--primary);color:#fff;text-align:center;border-radius:var(--radius);padding:.85rem">Get your free spot</a>        
-  </div>  
+<div class="drawer" id="drawer">
+  <div class="panel">
+    <button class="close" id="closeMenu" aria-label="Cerrar">×</button>
+    <a href="#como" data-close>Cómo empezamos</a>
+    <a href="#niveles" data-close>Niveles</a>
+    <a href="#testimonios" data-close>Testimonios</a>
+    <a href="#contacto" data-close>Contacto</a>
+    <a href="#contacto" class="cta" data-close style="background:var(--primary);color:#fff;text-align:center;border-radius:var(--radius);padding:.85rem">Pide tu plaza gratis</a>
+<!-- Mobile drawer -->
+<div class="mobile-drawer" id="mobile-drawer">
+  <div class="drawer-panel">
+    <button class="drawer-close" id="menu-close" aria-label="Cerrar">×</button>
+    <a href="#how-we-start" data-close>Cómo empezamos</a>
+    <a href="#levels" data-close>Niveles</a>
+    <a href="#testimonials" data-close>Testimonios</a>
+    <a href="#contact" data-close>Contacto</a>
+    <a href="#contact" class="drawer-cta" data-close>Pide tu plaza gratis</a>
+  </div>
 </div>
-<main id="top"> 
-  <section class="hero"> 
-    <div class="wrap grid"> 
+<main id="top">
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="wrap grid">
+    <div class="container hero-grid">
       <div>
-        <div class="badge"> 
- <span class="estrellas" style="display: inline-flex; gap: 4px; align-items: center; color: #0056b3; font-size: 1.2rem;">
-  ★ ★ ★ ★ ★
-</span>
-          <span>4.9/5 on Google · Ronda</span>          
-        </div>        
-        <h1>Your child can do it all <em>with the right support</em></h1>        
-        <p class="lead">At Maybe, in Ronda, we support your child with small classes, individual attention, and a method that leaves a mark. Real results from the first month, in-person and online.</p>         
-        <div class="ctas">         
-          <a href="#contacto" class="btn btn-primary">Start with no obligation →</a>  
-          <a href="https://wa.me/34699331196" target="_blank" rel="noopener" class="btn btn-ghost">Speak via WhatsApp</a>              
-        </div>        
-        <dl class="stats">         
-          <div> <div class="k">+15</div> <div class="v">years supporting</div> </div>  
-          <div> <div class="k">1:4</div> <div class="v">maximum ratio</div> </div>            
-          <div> <div class="k">4.9★</div> <div class="v">Google rating</div> </div>            
-        </dl>        
-      </div>      
-      <div class="hero-img-wrap">       
-       <img class="hero-img" src="./imagen-principal.jpg" alt="Niño estudiando en Maybe">
+        <div class="badge">
+          <span class="stars">★★★★★</span>
+        </div>
+        <h1>Tu hijo puede con todo <em>con el apoyo adecuado</em></h1>
+        <p class="lead">En Maybe, en Ronda, acompañamos a tu hijo con clases reducidas, atención individualizada y un método que deja huella. Resultados reales desde el primer mes, presencial y online.</p>
+        <div class="ctas">
+          <a href="#contacto" class="btn btn-primary">Empieza sin compromiso →</a>
+        <div class="cta-group">
+          <a href="#contact" class="btn btn-primary">Empieza sin compromiso →</a>
+          <a href="https://wa.me/34699331196" target="_blank" rel="noopener" class="btn btn-ghost">Hablar por WhatsApp</a>
+        </div>
+        <dl class="stats">
+          <div><div class="k">+15</div><div class="v">años acompañando</div></div>
+          <div><div class="k">1:4</div><div class="v">ratio máximo</div></div>
+          <div><div class="k">4.9★</div><div class="v">valoración Google</div></div>
+          <div><div class="stat-value">+15</div><div class="stat-label">años acompañando</div></div>
+          <div><div class="stat-value">1:4</div><div class="stat-label">ratio máximo</div></div>
+          <div><div class="stat-value">4.9★</div><div class="stat-label">valoración Google</div></div>
+        </dl>
       </div>
-    </div>    
-  </section>  
-  <section class="block">   
-    <div class="wrap"> 
-      <div class="section-head"> 
-        <span class="ceja">Why choose us</span> 
-        <h2>Three reasons to trust Maybe</h2>        
-        <p>More than tutoring: a team that truly cares about every student.</p>        
-      </div>      
-      <div class="grid-3">       
-        <div class="card"> <div class="icon">♡</div> <h3>Your child is the protagonist</h3> <p>We know them by name, their challenges, and their strengths. A 100% personalized approach that makes them feel supported and secure from day one.</p> </div>  
-        <div class="card"> <div class="icon">◎</div> <h3>Results you can see</h3> <p>Methodology focused on what works: clear goals, constant monitoring, and real motivation. Visible progress in weeks.</p> </div>          
-        <div class="card"> <div class="icon">✦</div> <h3>Prepared for more than just an exam</h3> <p>More than grades: study habits, autonomy, and confidence. Tools that will serve them for a lifetime.</p> </div>          
-      </div>      
-    </div>    
-  </section>  
-  <section class="block" id="como" style="background:hsla(208,80%,92%,.35);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">     
-    <div class="wrap"> 
-      <div class="section-head"> 
-        <span class="ceja">How we start</span> 
-        <h2>Three simple steps to begin</h2>        
-        <p>A clear process, no commitment, designed so you can decide with peace of mind.</p>        
-      </div>      
-      <div class="grid-3">       
-        <div class="card solid"> <div class="icon">☏</div> <h3>1. Contact</h3> <p>Tell us what your child needs via WhatsApp, phone, or at the center. No commitment.</p> </div>  
-        <div class="card solid"> <div class="icon">✎</div> <h3>2. Evaluation</h3> <p>We get to know the student, detect their strengths, and identify where they need support.</p> </div>          
-        <div class="card solid"> <div class="icon">➚</div> <h3>3. Personalized plan</h3> <p>We design a tailored plan and start. You see the progress week by week.</p> </div>          
-      </div>      
-    </div>    
-  </section>  
-  <section class="block levels-bg" id="niveles">    
-    <div class="wrap"> 
-      <div class="section-head"> 
-        <span class="ceja">Our levels</span> 
-        <h2>We support you at every stage</h2>        
-        <p>From the first years of school to university, with a plan tailored to each student.</p>        
-      </div>      
-      <div class="grid-5">       
-        <div class="card lvl solid"> <div class="icon">📖</div> <h3>Primary</h3> <p>We build the foundations with fun and method. Math, Language, and English adapted to how each child learns.</p> <a href="#contacto" class="more">More information →</a> </div>    
-        <div class="card lvl solid"> <div class="icon">🏫</div> <h3>Secondary (ESO)</h3> <p>We overcome weak points together. Continuous reinforcement and preparation that works.</p> <a href="#contacto" class="more">More information →</a> </div>            
-        <div class="card lvl solid"> <div class="icon">🎓</div> <h3>High School (Bachillerato)</h3> <p>Intensive support for EBAU and high school challenges. Clear goals, concrete results.</p> <a href="#contacto" class="more">More information →</a> </div>            
-        <div class="card lvl solid"> <div class="icon">🧭</div> <h3>Entrance Exams</h3> <p>Your second chance with a tailored plan. Complete preparation for ages 25 and 45+.</p> <a href="#contacto" class="more">More information →</a> </div>            
-        <div class="card lvl solid"> <div class="icon">📚</div> <h3>University Support</h3> <p>Pass difficult subjects with real support. Degree tutoring and academic guidance.</p> <a href="#contacto" class="more">More information →</a> </div>            
-      </div>      
-    </div>    
-  </section>  
-  <section class="block" id="testimonios">    
-    <div class="wrap"> 
-      <div class="section-head"> 
-        <span class="bower">Testimonials</span> 
-        <h2>What families say</h2>        
-        <p>Families in Ronda who trusted us and today see their children grow with confidence and good grades.</p>        
-      </div>      
-      <div class="tgrid">       
-        <figure class="tcard"> <div class="stars">★★★★★</div> <blockquote>"Charming professionals and a fully equipped center. My child has made very noticeable progress in less than a month. Thank you, a thousand times thank you."</blockquote> <figcaption class="who"> <div class="avatar">I</div> <div> <div class="name">Inma</div> <div class="role">Student's parent</div> </div> </figcaption> </figure>      
-        <figure class="tcard"> <div class="stars">★★★★★</div> <blockquote>"Very professional, kind, and attentive. They transmit values and impart knowledge in depth. For me, a 10. Unbeatable 💚."</blockquote> <figcaption class="who"> <div class="avatar">M</div> <div> <div class="name">Miguel Ángel Flores</div> <div class="role">Local Guide · 102 reviews</div> </div> </figcaption> </figure>              
-        <figure class="tcard"> <div class="stars">★★★★★</div> <blockquote>"Great place and perfect support, great in general."</blockquote> <figcaption class="who"> <div class="avatar">D</div> <div> <div class="name">Daniel Rodríguez</div> <div class="role">Student</div> </div> </figcaption> </figure>              
-        <figure class="tcard"> <div class="stars">★★★★★</div> <blockquote>"Without a doubt, perfect."</blockquote> <figcaption class="who"> <div class="avatar">T</div> <div> <div class="name">Toñi Rodríguez</div> <div class="role">4 reviews · 7 photos</div> </div> </figcaption> </figure>              
-      </div>      
-    </div>    
-  </section>  
-  <section class="block contact" id="contacto">    
-    <div class="wrap grid"> 
+      <div class="hero-img-wrap">
+        <img class="hero-img" src="./assets/hero-study.png" alt="Niño estudiando en Maybe" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&q=80'" />
+      </div>
+    </div>
+  </section>
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Por qué elegirnos</span>
+      <div class="hero-image-wrap">
+        <img class="hero-image" src="./assets/hero-study.png" alt="Niño estudiando en Maybe" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&q=80'" />
+      </div>
+    </div>
+  </section>
+  <!-- Why choose us -->
+  <section class="section-block">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">Por qué elegirnos</span>
+        <h2>Tres razones para confiar en Maybe</h2>
+        <p>Más que clases de apoyo: un equipo que se implica de verdad con cada alumno.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card"><div class="icon">♡</div><h3>Tu hijo es el protagonista</h3><p>Le conocemos por su nombre, sus retos y sus fortalezas. Un trato 100 % personalizado que le hace sentir acompañado y seguro desde el primer día.</p></div>
+        <div class="card"><div class="icon">◎</div><h3>Resultados que se notan</h3><p>Metodología centrada en lo que funciona: objetivos claros, seguimiento constante y motivación real. Avances visibles en semanas.</p></div>
+        <div class="card"><div class="icon">✦</div><h3>Preparados para mucho más que un examen</h3><p>Más que notas: hábitos de estudio, autonomía y confianza. Herramientas que le servirán toda la vida.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="block" id="como" style="background:hsla(208,80%,92%,.35);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Cómo empezamos</span>
+      <div class="grid-three">
+        <div class="card"><div class="card-icon">♡</div><h3>Tu hijo es el protagonista</h3><p>Le conocemos por su nombre, sus retos y sus fortalezas. Un trato 100 % personalizado que le hace sentir acompañado y seguro desde el primer día.</p></div>
+        <div class="card"><div class="card-icon">◎</div><h3>Resultados que se notan</h3><p>Metodología centrada en lo que funciona: objetivos claros, seguimiento constante y motivación real. Avances visibles en semanas.</p></div>
+        <div class="card"><div class="card-icon">✦</div><h3>Preparados para mucho más que un examen</h3><p>Más que notas: hábitos de estudio, autonomía y confianza. Herramientas que le servirán toda la vida.</p></div>
+      </div>
+    </div>
+  </section>
+  <!-- How we start -->
+  <section class="section-block process-section" id="how-we-start">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">Cómo empezamos</span>
+        <h2>Tres pasos sencillos para empezar</h2>
+        <p>Un proceso claro, sin compromiso, pensado para que decidas con tranquilidad.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card solid"><div class="icon">☏</div><h3>1. Contacto</h3><p>Cuéntanos qué necesita tu hijo por WhatsApp, teléfono o en el centro. Sin compromiso.</p></div>
+        <div class="card solid"><div class="icon">✎</div><h3>2. Evaluación</h3><p>Conocemos al alumno, detectamos sus puntos fuertes y dónde necesita refuerzo.</p></div>
+        <div class="card solid"><div class="icon">➚</div><h3>3. Plan personalizado</h3><p>Diseñamos un plan a su medida y empezamos. Tú ves los avances semana a semana.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="block levels-bg" id="niveles">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Nuestros niveles</span>
+      <div class="grid-three">
+        <div class="card card-solid"><div class="card-icon">☏</div><h3>1. Contacto</h3><p>Cuéntanos qué necesita tu hijo por WhatsApp, teléfono o en el centro. Sin compromiso.</p></div>
+        <div class="card card-solid"><div class="card-icon">✎</div><h3>2. Evaluación</h3><p>Conocemos al alumno, detectamos sus puntos fuertes y dónde necesita refuerzo.</p></div>
+        <div class="card card-solid"><div class="card-icon">➚</div><h3>3. Plan personalizado</h3><p>Diseñamos un plan a su medida y empezamos. Tú ves los avances semana a semana.</p></div>
+      </div>
+    </div>
+  </section>
+  <!-- Levels -->
+  <section class="section-block levels-section" id="levels">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">Nuestros niveles</span>
+        <h2>Te acompañamos en cada etapa</h2>
+        <p>Desde los primeros años de colegio hasta la universidad, con un plan a la medida de cada alumno.</p>
+      </div>
+      <div class="grid-5">
+        <div class="card lvl solid"><div class="icon">📖</div><h3>Primaria</h3><p>Ponemos las bases con diversión y método. Matemáticas, Lengua e Inglés adaptados a cómo aprende cada niño.</p><a href="#contacto" class="more">Más info →</a></div>
+        <div class="card lvl solid"><div class="icon">🏫</div><h3>ESO</h3><p>Superamos juntos los puntos débiles. Refuerzo continuo y preparación de exámenes que funciona.</p><a href="#contacto" class="more">Más info →</a></div>
+        <div class="card lvl solid"><div class="icon">🎓</div><h3>Bachillerato</h3><p>Acompañamiento intensivo para la EBAU y los retos del instituto. Metas claras, resultados concretos.</p><a href="#contacto" class="more">Más info →</a></div>
+        <div class="card lvl solid"><div class="icon">🧭</div><h3>Pruebas de Acceso</h3><p>Tu segunda oportunidad con un plan a tu medida. Preparación completa para mayores de 25 y 45 años.</p><a href="#contacto" class="more">Más info →</a></div>
+        <div class="card lvl solid"><div class="icon">📚</div><h3>Apoyo Universitario</h3><p>Supera las asignaturas difíciles con apoyo de verdad. Tutorías de grado y orientación académica.</p><a href="#contacto" class="more">Más info →</a></div>
+      </div>
+    </div>
+  </section>
+  <section class="block" id="testimonios">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Testimonios</span>
+      <div class="grid-five">
+        <div class="card card-level card-solid"><div class="card-icon">📖</div><h3>Primaria</h3><p>Ponemos las bases con diversión y método. Matemáticas, Lengua e Inglés adaptados a cómo aprende cada niño.</p><a href="#contact" class="card-link">Más info →</a></div>
+        <div class="card card-level card-solid"><div class="card-icon">🏫</div><h3>ESO</h3><p>Superamos juntos los puntos débiles. Refuerzo continuo y preparación de exámenes que funciona.</p><a href="#contact" class="card-link">Más info →</a></div>
+        <div class="card card-level card-solid"><div class="card-icon">🎓</div><h3>Bachillerato</h3><p>Acompañamiento intensivo para la EBAU y los retos del instituto. Metas claras, resultados concretos.</p><a href="#contact" class="card-link">Más info →</a></div>
+        <div class="card card-level card-solid"><div class="card-icon">🧭</div><h3>Pruebas de Acceso</h3><p>Tu segunda oportunidad con un plan a tu medida. Preparación completa para mayores de 25 y 45 años.</p><a href="#contact" class="card-link">Más info →</a></div>
+        <div class="card card-level card-solid"><div class="card-icon">📚</div><h3>Apoyo Universitario</h3><p>Supera las asignaturas difíciles con apoyo de verdad. Tutorías de grado y orientación académica.</p><a href="#contact" class="card-link">Más info →</a></div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials -->
+  <section class="section-block" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">Testimonios</span>
+        <h2>Lo que dicen las familias</h2>
+        <p>Familias de Ronda que confiaron en nosotros y hoy ven a sus hijos crecer con confianza y buenas notas.</p>
+      </div>
+      <div class="tgrid">
+        <figure class="tcard"><div class="stars">★★★★★</div><blockquote>"Profesionales encantadores y un local totalmente equipado. Mi hijo ha dado un avance muy notorio en menos de un mes. Gracias y mil veces gracias."</blockquote><figcaption class="who"><div class="avatar">I</div><div><div class="name">Inma</div><div class="role">Madre de alumno</div></div></figcaption></figure>
+        <figure class="tcard"><div class="stars">★★★★★</div><blockquote>"Muy profesionales, amables y atentos. Transmiten valores e imparten conocimientos en profundidad. Para mí un 10. Inmejorable 💚."</blockquote><figcaption class="who"><div class="avatar">M</div><div><div class="name">Miguel Ángel Flores</div><div class="role">Local Guide · 102 reseñas</div></div></figcaption></figure>
+        <figure class="tcard"><div class="stars">★★★★★</div><blockquote>"Gran sitio y perfecto apoyo, genial en general."</blockquote><figcaption class="who"><div class="avatar">D</div><div><div class="name">Daniel Rodríguez</div><div class="role">Estudiante</div></div></figcaption></figure>
+        <figure class="tcard"><div class="stars">★★★★★</div><blockquote>"Sin duda perfecta."</blockquote><figcaption class="who"><div class="avatar">T</div><div><div class="name">Toñi Rodríguez</div><div class="role">4 reseñas · 7 fotos</div></div></figcaption></figure>
+      </div>
+    </div>
+  </section>
+  <section class="block contact" id="contacto">
+    <div class="wrap grid">
       <div>
-        <span class="bower" style="color:var(--primary-soft)">Contact</span>  
-        <h2>Start today, decide later</h2>        
-        <p style="color:#cfdaea;font-size:1.05rem;margin-top:1rem">Write to us or drop by the center. We will explain without obligation how we can help your child achieve their goals.</p>         
-        <div class="ctas">         
-          <a href="https://wa.me/34699331196" target="_blank" rel="noopener" class="btn btn-wa">Direct WhatsApp</a>    
-          <a href="tel:699331196" class="btn btn-primary">Call now</a>            
-        </div>        
-        <form class="wa-form" id="waForm" novalidate>           
+        <span class="eyebrow" style="color:var(--primary-soft)">Contacto</span>
+      <div class="testimonials-grid">
+        <figure class="testimonial-card"><div class="stars">★★★★★</div><blockquote>"Profesionales encantadores y un local totalmente equipado. Mi hijo ha dado un avance muy notorio en menos de un mes. Gracias y mil veces gracias."</blockquote><figcaption class="testimonial-author"><div class="author-avatar">I</div><div><div class="author-name">Inma</div><div class="author-role">Madre de alumno</div></div></figcaption></figure>
+        <figure class="testimonial-card"><div class="stars">★★★★★</div><blockquote>"Muy profesionales, amables y atentos. Transmiten valores e imparten conocimientos en profundidad. Para mí un 10. Inmejorable 💚."</blockquote><figcaption class="testimonial-author"><div class="author-avatar">M</div><div><div class="author-name">Miguel Ángel Flores</div><div class="author-role">Local Guide · 102 reseñas</div></div></figcaption></figure>
+        <figure class="testimonial-card"><div class="stars">★★★★★</div><blockquote>"Gran sitio y perfecto apoyo, genial en general."</blockquote><figcaption class="testimonial-author"><div class="author-avatar">D</div><div><div class="author-name">Daniel Rodríguez</div><div class="author-role">Estudiante</div></div></figcaption></figure>
+        <figure class="testimonial-card"><div class="stars">★★★★★</div><blockquote>"Sin duda perfecta."</blockquote><figcaption class="testimonial-author"><div class="author-avatar">T</div><div><div class="author-name">Toñi Rodríguez</div><div class="author-role">4 reseñas · 7 fotos</div></div></figcaption></figure>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section class="section-block contact-section" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <span class="kicker kicker-light">Contacto</span>
+        <h2>Empieza hoy, decídete después</h2>
+        <p style="color:#cfdaea;font-size:1.05rem;margin-top:1rem">Escríbenos o pásate por el centro. Te explicamos sin compromiso cómo podemos ayudar a tu hijo a alcanzar sus metas.</p>
+        <div class="ctas">
+          <a href="https://wa.me/34699331196" target="_blank" rel="noopener" class="btn btn-wa">WhatsApp directo</a>
+        <p class="contact-lead">Escríbenos o pásate por el centro. Te explicamos sin compromiso cómo podemos ayudar a tu hijo a alcanzar sus metas.</p>
+        <div class="cta-group">
+          <a href="https://wa.me/34699331196" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp directo</a>
+          <a href="tel:699331196" class="btn btn-primary">Llamar ahora</a>
+        </div>
+        <form class="wa-form" id="waForm" novalidate>
+        <form class="contact-form" id="contact-form" novalidate>
           <div>
-            <label for="f-name">Name</label> 
-            <input id="f-name" name="name" placeholder="Your name" required>                
+            <label for="f-name">Nombre</label>
+            <input id="f-name" name="name" placeholder="Tu nombre" required>
+            <label for="field-name">Nombre</label>
+            <input id="field-name" name="name" placeholder="Tu nombre" required>
           </div>
-          <div>          
-            <label for="f-level">Student level</label> 
-            <select id="f-level" name="level">              
-              <option>Primary</option>
-              <option>Secondary (ESO)</option>              
-              <option>High School (Bachillerato)</option>              
-              <option>Entrance Exams</option>              
-              <option>University</option>              
-            </select>            
-          </div>          
-          <div>          
-            <label for="f-msg">Message</label> 
-            <textarea id="f-msg" name="msg" placeholder="Briefly tell us what you need"></textarea>               
-          </div>          
-          <button type="submit">Send via WhatsApp →</button>           
-        </form>        
-      </div>      
-      <div class="info">       
+          <div>
+            <label for="f-level">Nivel del alumno</label>
+            <select id="f-level" name="level">
+            <label for="field-level">Nivel del alumno</label>
+            <select id="field-level" name="level">
+              <option>Primaria</option>
+              <option>ESO</option>
+              <option>Bachillerato</option>
+            </select>
+          </div>
+          <div>
+            <label for="f-msg">Mensaje</label>
+            <textarea id="f-msg" name="msg" placeholder="Cuéntanos brevemente qué necesitas"></textarea>
+            <label for="field-message">Mensaje</label>
+            <textarea id="field-message" name="message" placeholder="Cuéntanos brevemente qué necesitas"></textarea>
+          </div>
+          <button type="submit">Enviar por WhatsApp →</button>
+        </form>
+      </div>
+      <div class="info">
+      <div class="contact-info">
         <ul>
-          <li> <div class="ic">⌖</div> <div> <div class="label">Address</div> <div class="val">C. Martinete, 10, Ronda</div> </div> </li>   
-          <li> <div class="ic">☏</div> <div> <div class="label">Phone</div> <div class="val">699 33 11 96</div> </div> </li>             
-          <li> <div class="ic">✉</div> <div> <div class="label">Email</div> <div class="val">info@maybeapoyo.es</div> </div> </li>             
-          <li> <div class="ic">⏱</div> <div> <div class="label">Hours</div> <div class="val">Monday to Friday · 16:00 – 21:00</div> </div> </li>             
-        </ul>        
-      </div>      
-    </div>    
-  </section>  
+          <li><div class="ic">⌖</div><div><div class="label">Dirección</div><div class="val">C. Martinete, 10, Ronda</div></div></li>
+          <li><div class="ic">☏</div><div><div class="label">Teléfono</div><div class="val">699 33 11 96</div></div></li>
+          <li><div class="ic">✉</div><div><div class="label">Email</div><div class="val">info@maybeapoyo.es</div></div></li>
+          <li><div class="ic">⏱</div><div><div class="label">Horario</div><div class="val">Lunes a Viernes · 16:00 – 21:00</div></div></li>
+          <li><div class="info-icon">⌖</div><div><div class="info-label">Dirección</div><div class="info-value">C. Martinete, 10, Ronda</div></div></li>
+          <li><div class="info-icon">☏</div><div><div class="info-label">Teléfono</div><div class="info-value">699 33 11 96</div></div></li>
+          <li><div class="info-icon">✉</div><div><div class="info-label">Email</div><div class="info-value">info@maybeapoyo.es</div></div></li>
+          <li><div class="info-icon">⏱</div><div><div class="info-label">Horario</div><div class="info-value">Lunes a Viernes · 16:00 – 21:00</div></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </main>
 <footer>
-  <div class="wrap"> 
-    <div class="grid"> 
+  <div class="wrap">
+    <div class="grid">
       <div>
-        <div class="logo">Maybe</div> 
-        <p>Maybe Educational Support Center. Personalized learning, values, and real results in the heart of Ronda.</p>        
-      </div>      
-      <div>      
-        <h4>Quick access</h4>
-        <ul>        
-          <li> <a href="#como">How we start</a> </li> 
-          <li> <a href="#niveles">Levels</a> </li>           
-          <li> <a href="#testimonios">Testimonials</a> </li>           
-          <li> <a href="#contacto">Contact</a> </li>           
-        </ul>        
-      </div>      
-      <div>      
-        <h4>Contact</h4>
-        <ul>        
-          <li>C. Martinete, 10, Ronda</li>
-          <li> <a href="tel:699331196">699 33 11 96</a> </li>           
-          <li>M–F · 16:00 – 21:00</li>          
-        </ul>        
-      </div>      
-    </div>    
-    <div class="bottom">     
-      <p>© <span id="y"></span> Maybe Academy · Ronda</p>     
-      <div style="display:flex;gap:1.25rem"> <a href="#">GDPR</a> <a href="#">LOPIVI</a> <a href="#">Legal Notice</a> </div>          
-    </div>    
-  </div>  
+        <div class="logo">Maybe</div>
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand">Maybe</div>
+        <p>Centro de Apoyo Educativo Maybe. Aprendizaje personalizado, valores y resultados reales en el corazón de Ronda.</p>
+      </div>
+      <div>
+        <h4>Acceso rápido</h4>
+        <ul>
+          <li><a href="#como">Cómo empezamos</a></li>
+          <li><a href="#niveles">Niveles</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#how-we-start">Cómo empezamos</a></li>
+          <li><a href="#levels">Niveles</a></li>
+          <li><a href="#testimonials">Testimonios</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>© <span id="y"></span> Maybe Academia · Ronda</p>
+      <div style="display:flex;gap:1.25rem"><a href="#">RGPD</a><a href="#">LOPIVI</a><a href="#">Aviso legal</a></div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Maybe Academia · Ronda</p>
+      <div class="footer-legal"><a href="#">RGPD</a><a href="#">LOPIVI</a><a href="#">Aviso legal</a></div>
+    </div>
+  </div>
 </footer>
-<a class="fab" href="https://wa.me/34699331196" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>     
-<script src="./script.js"></script> 
+<a class="fab" href="https://wa.me/34699331196" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+<!-- Floating WhatsApp action -->
+<a class="floating-action" href="https://wa.me/34699331196" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+<script src="./script.js"></script>
 </body>
-</html>
