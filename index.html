@@ -7,52 +7,67 @@
   <meta name="description" content="Aprendizaje personalizado para un futuro brillante. Clases de apoyo en Ronda para Primaria, ESO, Bachillerato, Pruebas de Acceso y Universidad." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
- 
+
 <!-- Site navigation -->
 <nav class="site-nav">
   <div class="container nav-inner">
-    <a href="#top" class="brand">Maybe</a>
+    <a href="#top" class="brand">
+      <img src="./imagen-logo.png" alt="Maybe Centro de Apoyo Educativo" class="nav-logo">
+    </a>
     <div class="nav-links">
-      <a href="#how-we-start" class="nav-link">Cómo empezamos</a>
       <a href="#levels" class="nav-link">Niveles</a>
       <a href="#testimonials" class="nav-link">Testimonios</a>
       <a href="#contact" class="nav-link">Contacto</a>
+      <a href="tel:699331196" class="nav-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        699 33 11 96
+      </a>
       <a href="#contact" class="nav-cta">Pide tu plaza gratis</a>
       <button class="menu-toggle" id="menu-open" aria-label="Abrir menú">☰</button>
     </div>
   </div>
 </nav>
- 
+
 <!-- Mobile drawer -->
 <div class="mobile-drawer" id="mobile-drawer">
   <div class="drawer-panel">
     <button class="drawer-close" id="menu-close" aria-label="Cerrar">×</button>
-    <a href="#how-we-start" data-close>Cómo empezamos</a>
     <a href="#levels" data-close>Niveles</a>
     <a href="#testimonials" data-close>Testimonios</a>
     <a href="#contact" data-close>Contacto</a>
+    <a href="tel:699331196" data-close>📞 699 33 11 96</a>
     <a href="#contact" class="drawer-cta" data-close>Pide tu plaza gratis</a>
   </div>
 </div>
- 
+
 <main id="top">
- 
+
   <!-- Hero section -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
         <div class="badge">
-          <span class="stars">★★★★★</span>
+          <span class="stars">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </span>
+          <span>4.9/5 en Google · Ronda</span>
         </div>
         <h1>Tu hijo puede con todo <em>con el apoyo adecuado</em></h1>
         <p class="lead">En Maybe, en Ronda, acompañamos a tu hijo con clases reducidas, atención individualizada y un método que deja huella. Resultados reales desde el primer mes, presencial y online.</p>
         <div class="cta-group">
           <a href="#contact" class="btn btn-primary">Empieza sin compromiso →</a>
-          <a href="https://wa.me/34699331196" target="_blank" rel="noopener" class="btn btn-ghost">Hablar por WhatsApp</a>
+          <a href="https://wa.me/34699331196" target="_blank" rel="noopener" class="btn btn-ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Hablar por WhatsApp
+          </a>
         </div>
         <dl class="stats">
           <div><div class="stat-value">+15</div><div class="stat-label">años acompañando</div></div>
@@ -61,11 +76,11 @@
         </dl>
       </div>
       <div class="hero-image-wrap">
-        <img class="hero-image" src="./assets/hero-study.png" alt="Niño estudiando en Maybe" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&q=80'" />
+        <img class="hero-image" src="./imagen-principal.jpg" alt="Niño estudiando en Maybe" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&q=80'" />
       </div>
     </div>
   </section>
- 
+
   <!-- Why choose us -->
   <section class="section-block">
     <div class="container">
@@ -75,13 +90,31 @@
         <p>Más que clases de apoyo: un equipo que se implica de verdad con cada alumno.</p>
       </div>
       <div class="grid-3">
-        <div class="card"><div class="icon">♡</div><h3>Tu hijo es el protagonista</h3><p>Le conocemos por su nombre, sus retos y sus fortalezas. Un trato 100 % personalizado que le hace sentir acompañado y seguro desde el primer día.</p></div>
-        <div class="card"><div class="icon">◎</div><h3>Resultados que se notan</h3><p>Metodología centrada en lo que funciona: objetivos claros, seguimiento constante y motivación real. Avances visibles en semanas.</p></div>
-        <div class="card"><div class="icon">✦</div><h3>Preparados para mucho más que un examen</h3><p>Más que notas: hábitos de estudio, autonomía y confianza. Herramientas que le servirán toda la vida.</p></div>
+        <div class="card">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
+          <h3>Tu hijo es el protagonista</h3>
+          <p>Le conocemos por su nombre, sus retos y sus fortalezas. Un trato 100 % personalizado que le hace sentir acompañado y seguro desde el primer día.</p>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <h3>Resultados que se notan</h3>
+          <p>Metodología centrada en lo que funciona: objetivos claros, seguimiento constante y motivación real. Avances visibles en semanas.</p>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+          </div>
+          <h3>Preparados para mucho más que un examen</h3>
+          <p>Más que notas: hábitos de estudio, autonomía y confianza. Herramientas que le servirán toda la vida, no solo para aprobar.</p>
+        </div>
       </div>
     </div>
   </section>
- 
+
   <!-- How we start -->
   <section class="section-block process-section" id="how-we-start">
     <div class="container">
@@ -91,13 +124,31 @@
         <p>Un proceso claro, sin compromiso, pensado para que decidas con tranquilidad.</p>
       </div>
       <div class="grid-3">
-        <div class="card solid"><div class="icon">☏</div><h3>1. Contacto</h3><p>Cuéntanos qué necesita tu hijo por WhatsApp, teléfono o en el centro. Sin compromiso.</p></div>
-        <div class="card solid"><div class="icon">✎</div><h3>2. Evaluación</h3><p>Conocemos al alumno, detectamos sus puntos fuertes y dónde necesita refuerzo.</p></div>
-        <div class="card solid"><div class="icon">➚</div><h3>3. Plan personalizado</h3><p>Diseñamos un plan a su medida y empezamos. Tú ves los avances semana a semana.</p></div>
+        <div class="card solid">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <h3>1. Contacto</h3>
+          <p>Cuéntanos qué necesita tu hijo por WhatsApp, teléfono o en el centro. Sin compromiso.</p>
+        </div>
+        <div class="card solid">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+          </div>
+          <h3>2. Evaluación</h3>
+          <p>Conocemos al alumno, detectamos sus puntos fuertes y dónde necesita refuerzo.</p>
+        </div>
+        <div class="card solid">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </div>
+          <h3>3. Plan personalizado</h3>
+          <p>Diseñamos un plan a su medida y empezamos. Tú ves los avances semana a semana.</p>
+        </div>
       </div>
     </div>
   </section>
- 
+
   <!-- Levels -->
   <section class="section-block levels-section" id="levels">
     <div class="container">
@@ -115,7 +166,7 @@
       </div>
     </div>
   </section>
- 
+
   <!-- Testimonials -->
   <section class="section-block" id="testimonials">
     <div class="container">
@@ -124,74 +175,160 @@
         <h2>Lo que dicen las familias</h2>
         <p>Familias de Ronda que confiaron en nosotros y hoy ven a sus hijos crecer con confianza y buenas notas.</p>
       </div>
-      <div class="tgrid">
-        <figure class="tcard"><div class="stars">★★★★★</div><blockquote>"Profesionales encantadores y un local totalmente equipado. Mi hijo ha dado un avance muy notorio en menos de un mes. Gracias y mil veces gracias."</blockquote><figcaption class="who"><div class="avatar">I</div><div><div class="name">Inma</div><div class="role">Madre de alumno</div></div></figcaption></figure>
-        <figure class="tcard"><div class="stars">★★★★★</div><blockquote>"Muy profesionales, amables y atentos. Transmiten valores e imparten conocimientos en profundidad. Para mí un 10. Inmejorable 💚."</blockquote><figcaption class="who"><div class="avatar">M</div><div><div class="name">Miguel Ángel Flores</div><div class="role">Local Guide · 102 reseñas</div></div></figcaption></figure>
-        <figure class="tcard"><div class="stars">★★★★★</div><blockquote>"Gran sitio y perfecto apoyo, genial en general."</blockquote><figcaption class="who"><div class="avatar">D</div><div><div class="name">Daniel Rodríguez</div><div class="role">Estudiante</div></div></figcaption></figure>
-        <figure class="tcard"><div class="stars">★★★★★</div><blockquote>"Sin duda perfecta."</blockquote><figcaption class="who"><div class="avatar">T</div><div><div class="name">Toñi Rodríguez</div><div class="role">4 reseñas · 7 fotos</div></div></figcaption></figure>
+      <div class="carousel-wrapper">
+        <div class="carousel-track">
+          <figure class="tcard">
+            <div class="stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <blockquote>"Unas personas encantadoras, profesionales en su trabajo, un local totalmente equipado, para que los niños se sientan cómodos a la hora del aprendizaje. Solo tengo palabras de agradecimiento, gracias a ellos mi hijo ha dado un avance bastante notorio y satisfactorio en menos de un mes. Gracias y mil veces gracias."</blockquote>
+            <figcaption class="who">
+              <div class="avatar">I</div>
+              <div><div class="name">Inma</div><div class="role">Madre de alumno</div></div>
+            </figcaption>
+          </figure>
+          <figure class="tcard">
+            <div class="stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <blockquote>"Muy profesionales, amables, atentos, transmiten valores en la enseñanza e imparten conocimientos específicos de cada materia en profundidad. Para mí un 10!! Inmejorable 💚."</blockquote>
+            <figcaption class="who">
+              <div class="avatar">M</div>
+              <div><div class="name">Miguel Ángel Flores</div><div class="role">Local Guide · 102 reseñas</div></div>
+            </figcaption>
+          </figure>
+          <figure class="tcard">
+            <div class="stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <blockquote>"Gran sitio y perfecto apoyo, genial en general."</blockquote>
+            <figcaption class="who">
+              <div class="avatar">D</div>
+              <div><div class="name">Daniel Rodríguez</div><div class="role">Estudiante</div></div>
+            </figcaption>
+          </figure>
+          <figure class="tcard">
+            <div class="stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <blockquote>"Sin duda perfecta."</blockquote>
+            <figcaption class="who">
+              <div class="avatar">T</div>
+              <div><div class="name">Toñi Rodríguez</div><div class="role">4 reseñas · 7 fotos</div></div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" aria-label="Anterior">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="carousel-btn next" aria-label="Siguiente">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
       </div>
     </div>
   </section>
- 
+
   <!-- Contact -->
   <section class="section-block contact-section" id="contact">
     <div class="container contact-grid">
-      <div>
+      <div class="contact-text-area">
         <span class="kicker kicker-light">Contacto</span>
         <h2>Empieza hoy, decídete después</h2>
-        <p class="contact-lead">Escríbenos o pásate por el centro. Te explicamos sin compromiso cómo podemos ayudar a tu hijo a alcanzar sus metas.</p>
+        <p class="contact-lead">Escríbenos o pásate por el centro. Te explicamos sin compromiso cómo podemos ayudar a tu hijo o hija a alcanzar sus metas.</p>
         <div class="cta-group">
-          <a href="https://wa.me/34699331196" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp directo</a>
-          <a href="tel:699331196" class="btn btn-primary">Llamar ahora</a>
+          <a href="https://wa.me/34699331196" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            WhatsApp
+          </a>
+          <a href="tel:699331196" class="btn btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Llamar ahora
+          </a>
         </div>
-        <form class="contact-form" id="contact-form" novalidate>
-          <div>
-            <label for="field-name">Nombre</label>
-            <input id="field-name" name="name" placeholder="Tu nombre" required>
-          </div>
-          <div>
-            <label for="field-level">Nivel del alumno</label>
-            <select id="field-level" name="level">
-              <option>Primaria</option>
-              <option>ESO</option>
-              <option>Bachillerato</option>
-            </select>
-          </div>
-          <div>
-            <label for="field-message">Mensaje</label>
-            <textarea id="field-message" name="message" placeholder="Cuéntanos brevemente qué necesitas"></textarea>
-          </div>
-          <button type="submit">Enviar por WhatsApp →</button>
-        </form>
       </div>
       <div class="contact-info">
         <ul>
-          <li><div class="info-icon">⌖</div><div><div class="info-label">Dirección</div><div class="info-value">C. Martinete, 10, Ronda</div></div></li>
-          <li><div class="info-icon">☏</div><div><div class="info-label">Teléfono</div><div class="info-value">699 33 11 96</div></div></li>
-          <li><div class="info-icon">✉</div><div><div class="info-label">Email</div><div class="info-value">info@maybeapoyo.es</div></div></li>
-          <li><div class="info-icon">⏱</div><div><div class="info-label">Horario</div><div class="info-value">Lunes a Viernes · 16:00 – 21:00</div></div></li>
+          <li>
+            <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><div class="info-label">Dirección</div><div class="info-value">C. Martinete, 10, Ronda</div></div>
+          </li>
+          <li>
+            <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><div class="info-label">Teléfono</div><div class="info-value">699 33 11 96</div></div>
+          </li>
+          <li>
+            <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+            <div><div class="info-label">Email</div><div class="info-value">info@maybeapoyo.es</div></div>
+          </li>
+          <li>
+            <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div><div class="info-label">Horario</div><div class="info-value">Lunes a Viernes · 16:00 - 21:00</div></div>
+          </li>
         </ul>
       </div>
     </div>
   </section>
- 
+
 </main>
- 
+
 <!-- Footer -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
-      <div>
-        <div class="brand">Maybe</div>
+      <div class="footer-brand-col">
+        <div class="footer-logo-wrap">
+           <img src="./imagen-logo.png" alt="Maybe Centro de Apoyo Educativo" class="footer-logo">
+        </div>
         <p>Centro de Apoyo Educativo Maybe. Aprendizaje personalizado, valores y resultados reales en el corazón de Ronda.</p>
       </div>
       <div>
         <h4>Acceso rápido</h4>
         <ul>
-          <li><a href="#how-we-start">Cómo empezamos</a></li>
           <li><a href="#levels">Niveles</a></li>
           <li><a href="#testimonials">Testimonios</a></li>
           <li><a href="#contact">Contacto</a></li>
+          <li><a href="#">Aula virtual</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul class="footer-contact-list">
+          <li>
+             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+             C. Martinete, 10, Ronda
+          </li>
+          <li>
+             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+             699 33 11 96
+          </li>
+          <li>
+             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+             L-V · 16:00 - 21:00
+          </li>
         </ul>
       </div>
     </div>
@@ -201,11 +338,12 @@
     </div>
   </div>
 </footer>
- 
+
 <!-- Floating WhatsApp action -->
-<a class="floating-action" href="https://wa.me/34699331196" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
- 
+<a class="floating-action" href="https://wa.me/34699331196" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
 <script src="./script.js"></script>
 </body>
 </html>
- 
